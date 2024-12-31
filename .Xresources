@@ -1,0 +1,6 @@
+xterm.termName: xterm-256color
+xterm*reverseVideo: on
+xterm*faceName: fixed
+xterm*faceSize: 14
+xterm*selectToClipboard: true
+xterm*highlightSelection: true
