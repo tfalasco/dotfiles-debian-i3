@@ -92,14 +92,16 @@ Add window theme support.
 `sudo apt install qt5ct lxappearance gtk-chtheme`  
 
 ### Some other niceties  
-`sudo apt install build-essential`  
-`sudo apt install gdb`  
-`sudo apt install git-gui gitk`  
-`sudo apt install flatpak`  
-`sudo apt install digikam`  
-`sudo apt install libreoffice`  
-`sudo apt install kcalc`  
-`sudo apt install vlc`  
+`sudo apt install build-essential`  for development tools  
+`sudo apt install gdb`  for debugging  
+`sudo apt install git-gui gitk`  for visual git tools  
+`sudo apt install flatpak`  to install flatpaks  
+`sudo apt install digikam`  for photo editing and management  
+`sudo apt install shotwell`  for photo browsing  
+`sudo apt install libreoffice`  for office suite  
+`sudo apt install kcalc`  for calculator  
+`sudo apt install vlc`  to play videos  
+`sudo apt install ffmpeg`  to test your webcam  (with `ffplay /dev/video0`)  
 
 ## Non-apt packages  
 These are some convenient packages to have, which are not available in the Debian apt repositories
