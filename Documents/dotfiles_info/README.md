@@ -44,7 +44,6 @@ Update the dotfiles git configuration to not show untracked files, which helps c
 Checkout the main branch.  
 `dotfiles checkout`  
 
-
 Install a browser  
 `sudo apt install firefox-esr`  
 
@@ -87,6 +86,7 @@ The i3 config file maps keyboard brightness keys to brightness control.
 
 Enable printing.  
 `sudo apt install cups`  
+`systemctl enable --now cups`  
 
 Add window theme support.  
 `sudo apt install qt5ct lxappearance gtk-chtheme`  
