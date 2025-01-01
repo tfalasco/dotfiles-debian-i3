@@ -56,6 +56,8 @@ Install rofi for a better application launching experience
 If you are struggling with Wi-Fi configuration, you may need to reinstall wireless-tools and install network-manager.  
 `sudo apt install --reinstall wireless-tools`  
 `sudo apt install network-manager`  
+To configure a network-manager connection, consider using `nmtui`.  
+
 Instead of using network-manager, you can edit `/etc/network/interfaces`, which will connect Wi-Fi automatically after boot but before login.  The contents should be:  
 ```
 auto WFA  
@@ -63,9 +65,10 @@ iface WFA inet dhcp
 	wpa-ssid SSID  
 	wpa-psk ”PSK”  
 ```  
-WFA is the wifi adaptor name (which you can get from "ip a" in the terminal)  
-SSID is the SSID of the network without quotes.  
-PSK is the password of the network with quotes.  
+`WFA` is the wifi adaptor name (which you can get from "ip a" in the terminal)  
+`SSID` is the SSID of the network without quotes.  
+`PSK` is the password of the network with quotes.  
+Using the `etc/network/interfaces` file to configure a network interface will remove it from network-manager.  So either clear the `etc/network/interfaces` file content or rename the file if you are going to use network-manager.  
 
 To modify touchpad functionality, you will need to run xinput.  
 Check out this link for instructions on how to add configurations to the i3 config file: [Enable tap-to-click in i3](https://major.io/p/tray-icons-in-i3/)  
