@@ -104,6 +104,9 @@ Enable printing.
 Add window theme support.  
 `sudo apt install qt5ct lxappearance gtk-chtheme`  
 
+To allow non-root users to control power, lock, logout, etc., follow the instruction in this link: [Enable shutdown for normal users](https://winaero.com/how-to-enable-shutdown-and-reboot-for-a-normal-user-in-debian-jessie/#google_vignette).  
+The instruction in the link don't mention `lock`, but follow the same instructions for the `lock` section.
+
 ### Some other niceties  
 `sudo apt install build-essential`  for development tools  
 `sudo apt install gdb`  for debugging  
